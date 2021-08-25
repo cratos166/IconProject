@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     val client = OkHttpClient()
     lateinit var gridView: GridView
     lateinit var search_bar: TextInputEditText
-    private var playerNames = arrayOf("Cristiano Ronaldo", "Joao Felix", "Bernado Silva", "Andre    Silve", "Bruno Fernandez", "William Carvalho", "Nelson Semedo", "Pepe", "Rui Patricio")
+    private var playerNames = arrayOf("Cristiano Ronald", "Joao Felix", "Bernado Silva", "Andre    Silve", "Bruno Fernandez", "William Carvalho", "Nelson Semedo", "Pepe", "Rui Patricio")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
