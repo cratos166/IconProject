@@ -1,14 +1,16 @@
 package com.nbird.iconproject
 
-public class Model{
-    lateinit var imageUrl:String
-    lateinit var name:String
+ class Model{
+     var imageUrl:String=""
+    var name:String="null"
+    var cost:String="null"
+    var tag:Boolean = false
+     var tagTextView:String="null"
+     var style:String="null"
+     var type:String="null"
+     var iconId:Int = 0
+     var date:String="null"
 
-
-    constructor(imageUrl: String,name:String) {
-        this.imageUrl = imageUrl
-        this.name = name
-    }
 
     constructor()
-}
+ }

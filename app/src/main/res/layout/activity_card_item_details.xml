@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CardItemDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:elevation="-2dp"
+        android:foreground="?selectableItemBackground"
+        android:scaleX="0.90"
+        android:scaleY="0.90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        cardview:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/whitewithblackstroke"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tag"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/tag"
+                        android:layout_marginTop="10dp"
+                        cardview:layout_constraintStart_toStartOf="parent"
+                        cardview:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iconImg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/downloadIcon"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/whitewithblackstroke">
+
+                            <TextView
+                                android:id="@+id/cardText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Download"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/whiteinnerback"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/typeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lato_black"
+                        android:gravity="left"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:text=" Type : Vector "
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/styleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="left"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:text=" Style : Badge "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    <TextView
+                        android:id="@+id/IconIDTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="left"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:text=" Icon ID : 235344 "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="left"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:layout_marginTop="5dp"
+                        android:text=" Category : UI "
+                        android:textColor="#656565"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/publishingDateTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="left"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:text="Published Date :2015-01-05T08:25:06.853 "
+                        android:textColor="#656565"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tagTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="left"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:text=" TAGS : 'lion','kal' "
+                        android:textColor="#656565"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
